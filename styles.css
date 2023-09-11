@@ -1,10 +1,54 @@
-li {
-    color: blue;
+* {
+    border: 1px solid blue;
 }
 
-.second_main_list ul {
-    width: 100px;
-    height: 100px;
+body {
+    border-color: green;
+}
+header > div {
+    display: inline-block;
 }
 
+header > img {
+    width: 150px;
+}
 
+.header_middle {
+    width: 1400px;
+
+}
+
+.search_box {
+    width: 200px;
+}
+
+body > div {
+    width: 1000px;
+}
+
+.pirmas, .antras, .trecias {display: inline-block;}
+.keturi, .penki, .sesi {display: inline-block;}
+
+.pirmas {width: 150px; height: 400px;}
+
+.antras {width: 1400px; height: 400px;}
+
+.trecias {width: 200px; height: 400px;}
+
+.keturi {width: 150px; height: 40px;}
+
+.penki {width: 1400px; height: 40px;}
+
+.sesi {width: 200px; height: 40px;}
+
+nav {
+    width: 11%;
+}
+
+main {
+    width: 60%;
+}
+
+aside {
+    width: 11%;
+}
