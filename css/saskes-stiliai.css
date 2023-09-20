@@ -1,0 +1,52 @@
+.saskes > div {
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+    padding: 3px;
+    background-color: #92C47D;
+    text-align: center;
+    line-height: 75px;
+    border: solid;
+    float: left;
+}
+
+.saskes > div:nth-of-type(odd) {
+    background-color: #666666;
+}
+
+.saskes > div:nth-of-type(4n+2) {
+    background-color: #A2C4C8;
+}
+
+.saskes > div:nth-of-type(2n+16) {
+    background-color: #F4CCCC;
+}
+
+.saskes {
+    width: 500px;
+    margin: 25px;
+
+}
+
+.table1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pirmas {
+    background-color: DarkSlateGrey;
+    border: solid;
+    border-color: black;
+    color: white;
+    height: 50px;
+    text-align: center;
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background: teal;
+}

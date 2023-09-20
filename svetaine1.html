@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/gridai.css">
+    <script src="js/kintamieji.js" defer></script>
+    <title>Pirmoji Svetainė</title>
+</head>
+<body>
+    <header>w
+        <div class="header-logo"><img src="https://api.delfi.lt/media-api-image-cropper/v1/381f1de5-2f13-4e86-aed3-65fafd3e7d80.jpg?noup&w=1200&h=711&ch=1&cw=0.9562&cx=0.0438&cy=0&r=16:9&fx=0.5&fy=0.25" alt="header-wallpaper"></div>
+    </header>
+    <main>
+        <aside class="kairys-aside">
+            <div>jonas</div>
+        </aside>
+        <section>
+            <p id="ats">Cia bus irasytas atsakymas</p>
+            <p id="output"></p>
+            <script>
+                let n1 = 4;
+                let n2 = 3;
+                document.getElementById('ats').innerHTML = `${n1} ${n2} ${(n1-2)*180} ${(n2-2)*180} ${((n1-2)*180+(n2-2)*180)}`;
+                let a = 8;
+                let b = -10;
+                let c = 5;
+                if (a < b && a < c && a != b && a != c) {
+                document.getElementById('output').innerHTML = a;
+                } else if (b < a && b < c && b != a && b != c) {
+                document.getElementById('output').innerHTML = b;
+                } else if (c < a && c < b && c != a && c != b) {
+                document.getElementById('output').innerHTML = c;
+                }
+
+            </script>
+        </section>
+        <aside class="desinys-aside">
+            <div></div>
+        </aside>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

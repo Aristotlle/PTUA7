@@ -1,0 +1,41 @@
+main {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: 150px auto 150px;
+    grid-template-areas:
+      'h h h'
+      'a1 s a2'
+      'f f f'
+}
+
+header > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    grid-area: h;
+}
+
+.header-logo > img {
+    height: 350px;
+}
+
+.kairys-aside {
+    background: grey;
+    grid-area: a1;
+    min-height: 100;
+    width: 100%;
+    height: 100%;
+}
+
+.desinys-aside {
+    background: grey;
+    grid-area: a2;
+    min-height: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main > section {
+    grid-area: s;
+}
