@@ -1,0 +1,112 @@
+header {
+    text-align: center; /* Center text horizontally */
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center text vertically */
+    align-items: center; /* Center text vertically */
+    height: 100px; /* Adjust the height as needed */
+    background-color: #333; /* Optional: Add a background color */
+    color: white;
+    font-size: 24px;
+    font-family: Garamond;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background: grey;
+    position: relative;
+    z-index: 0;
+}
+
+.wrapper {
+    max-width: auto;
+    position: relative;
+}
+
+.wrapper i {
+    top: 50%;
+    background: white;
+    height: 46px;
+    width: 46px;
+    position: absolute;
+    text-align: center;
+    line-height: 46px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.wrapper i:first-child {
+    left: -23px;
+    z-index: 2;
+}
+
+.wrapper i:last-child {
+    right: -23px;
+    z-index: 2;
+}
+
+.wrapper .carousel {
+    font-size: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+/* Initially hide the tooltip */
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    top: 100%;
+    transition: transform 0.7s ease-in-out;
+}
+
+/* Show the tooltip when hovering over the image */
+.carousel img:hover + .tooltip {
+    display: block;
+}
+
+
+.carousel img {
+
+    height: 200px;
+    object-fit: cover;
+    width: calc(100% / 5);
+    filter: grayscale(100%);
+    transition: transform 0.7s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.carousel img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.carousel img:first-child {
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+    .carousel img{
+        width: calc(100% / 4);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .carousel img{
+        width: calc(100% / 3);
+    }
+}
+

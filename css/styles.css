@@ -1,3 +1,15 @@
+
+img {
+    transition: transform 0.3s;
+}
+img:hover {
+    transform: scale(1.5);
+}
+
+.hidden {
+    display: none;
+};
+
 css:
 /* Atstatyti pagrindinius stilius geresnei suderinamumui */
 body, h1, h2, h3, p, ul, li {
@@ -74,7 +86,16 @@ main {
     flex-grow: 1;
     padding: 20px;
     clear: both;
+    color: white;
 }
+.pasleptasTurinys {
+    display: none;
+}
+
+.pagrindinė-dalis {
+     /* Optional: Set the height to fill the viewport */
+}
+
 
 .reklamos-zona {
     width: 200px;
@@ -98,4 +119,13 @@ footer {
     padding: 10px 10px 10px 10px;
     color: white;
     background-color: DarkSlateGrey;
+}
+
+#resizeBar {
+    position: fixed;
+    top: 20px;
+    right: 0;
+    background-color: darkGreen;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
 }
