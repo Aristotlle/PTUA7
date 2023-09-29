@@ -1,4 +1,9 @@
 const carousel = document.querySelector(".carousel");
+const imgsScroll = document.querySelector(".imgs");
+
+const imgsDrag = function (e) {
+    imgsScroll.scrollLeft = e.pageX;
+}
 
 const dragging = function (e) {
     carousel.scrollLeft = e.pageX;
